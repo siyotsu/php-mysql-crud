@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$host = getenv('DB_HOST');
-$user = getenv('DB_USER');
-$pass = getenv('DB_PASSWORD');
-$db   = getenv('DB_NAME');
+$host = getenv('MYSQL_HOST');
+$user = getenv('MYSQL_USER');
+$pass = getenv('MYSQL_PASSWORD');
+$db   = getenv('MYSQL_DATABASE');
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
